@@ -21,11 +21,10 @@ html, body {
 	color: #a59c8f;
 	text-rendering: optimizeLegibility;
 	font-smooth:always;
-    text-align: center;
-    background: #f2f2ee;
+    text-align: center;  
 	-webkit-font-smoothing: subpixel-antialiased;
 	}
-
+body {background: #f7f7f5 url('/Users/ivyknight/Documents/PROJECTS/s-g/img/bg.png') top center no-repeat;}
 /* links __________________________ */
 a {
 	text-decoration:none;
@@ -50,8 +49,9 @@ h4 { font-size: 1.6rem; line-height: 1.2em; }
 h5 { font-size: 1.125rem; line-height: 0.6em; }
 
 ol { list-style-type: square; margin-left: 0;}
-ul { list-style-type: none; margin-left: 0;}
-li {margin-left: 0;}
+ul { list-style-type: none; margin-left: 0; padding-left: 0;
+}
+li {margin-left: 0; padding-left: 0;}
 p {margin-bottom: 0.5em; }
 em, small { font-size: 0.8rem; color: #c0ac51;}
 blockquote, q { }
