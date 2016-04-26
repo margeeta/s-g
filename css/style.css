@@ -24,7 +24,14 @@ html, body {
     text-align: center;  
 	-webkit-font-smoothing: subpixel-antialiased;
 	}
-body {background: #f7f7f5 url('/Users/ivyknight/Documents/PROJECTS/s-g/img/bg.png') top center no-repeat;}
+
+body {
+    background: linear-gradient(201deg, #f7f7f5, #f2ecda, #f0d7e0);
+    background-size: 600% 600%;
+    -webkit-animation: gradient 8s ease infinite;
+    -moz-animation: gradient 8s ease infinite;
+    animation: gradient 8s ease infinite;
+    }
 /* links __________________________ */
 a {
 	text-decoration:none;
@@ -44,14 +51,14 @@ a:hover{ color: #c0ac51;}
 h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; font-weight: 400;}
 h1 { font-size: 6rem; line-height: 1em; color: #c0ac51;}
 h2 { font-size: 2rem; line-height: 0.4em; }
-h3 { font-size: 1.2rem; line-height: 0.8em; }
+h3 { font-size: 1.2rem; line-height: 2em; }
 h4 { font-size: 1.6rem; line-height: 1.2em; }
 h5 { font-size: 1.125rem; line-height: 0.6em; }
 
 ol { list-style-type: square; margin-left: 0;}
-ul { list-style-type: none; margin-left: 0; padding-left: 0;
+ul { list-style-type: none; margin-left: 0; padding-left: 0; 
 }
-li {margin-left: 0; padding-left: 0;}
+li {margin-left: 1em; padding-left: 0; display: inline;}
 p {margin-bottom: 0.5em; }
 em, small { font-size: 0.8rem; color: #c0ac51;}
 blockquote, q { }
@@ -89,11 +96,10 @@ input[type="checkbox"] {}
 input[type="radio"] {}
 button, input[type="button"], input[type="reset"], input[type="submit"],.button {
 	padding: 0.6rem 2rem 0.8rem;
-    font-family: 'Playfair Display', serif;
-	font-size: 2em;
+    	font-family: 'Playfair Display', serif;
 	color: #e5b5c4;
-    border: 1px solid #e5b5c4;
-    border-radius: 40px;
+    	border: 1px solid #e5b5c4;
+    	border-radius: 40px;
 	}
 button:hover { background: #c0ac51; color: #c0ac51; }
 /* media __________________________ */
@@ -109,6 +115,21 @@ video {}
   clear:both;
 }
 
+@-webkit-keyframes gradient {
+    0%{background-position:0% 60%}
+    50%{background-position:100% 41%}
+    100%{background-position:0% 60%}
+}
+@-moz-keyframes gradient {
+    0%{background-position:0% 60%}
+    50%{background-position:100% 41%}
+    100%{background-position:0% 60%}
+}
+@keyframes gradient { 
+    0%{background-position:0% 60%}
+    50%{background-position:100% 41%}
+    100%{background-position:0% 60%}
+}
 
 /* let's be repsonsive (mobile first- move up when done editing)__________________________ */
 @media screen and (min-width: 480px) {
